@@ -1,8 +1,8 @@
-*,
+/* *,
 *:after,
 *:before {
   box-sizing: inherit;
-}
+} */
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ section {
   margin: calc(var(--size) * 0.5) auto 0;
   width: calc(var(--size) * calc(var(--Nhexa) - 1));
   display: grid;
-  grid-template-columns: repeat(var(--Nhexa), 1fr);
+  grid-template-columns: repeat(var(--Nhexa),  1fr);
   grid-gap: var(--gap);
 }
 article {
@@ -73,6 +73,11 @@ img {
 }
 article:hover img {
   transform: translate(-50%, -50%) rotate(-110deg);
+}
+.clrsw{
+  width: 50px;
+  height: 50px;
+  margin-left: -180px;
 }
 h2 {
   font-size: 100%;
